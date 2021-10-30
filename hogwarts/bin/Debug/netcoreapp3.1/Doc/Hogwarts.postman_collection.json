@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "30fe9c1f-930f-47dc-a6aa-8d0087fd8d04",
+		"name": "Hogwarts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener solicitudes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44379/api/solicitudes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44379",
+					"path": [
+						"api",
+						"solicitudes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener una solicitud",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44379/api/solicitudes/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44379",
+					"path": [
+						"api",
+						"solicitudes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear una solicitud",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"alfredo\",\r\n    \"Apellido\": \"Mujica\",\r\n    \"Identificacion\": \"1234567891\",\r\n    \"Edad\": 99,\r\n    \"Casa\": \"casa\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44379/api/solicitudes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44379",
+					"path": [
+						"api",
+						"solicitudes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar solicitud",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"Nombre\": \"pepe\",\r\n    \"Apellido\": \"Mujica\",\r\n    \"Identificacion\": \"12345\",\r\n    \"Edad\": 12,\r\n    \"Casa\": \"test\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44379/api/solicitudes/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44379",
+					"path": [
+						"api",
+						"solicitudes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar solicitud",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44379/api/solicitudes/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44379",
+					"path": [
+						"api",
+						"solicitudes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

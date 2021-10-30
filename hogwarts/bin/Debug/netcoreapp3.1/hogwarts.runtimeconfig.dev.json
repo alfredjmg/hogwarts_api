@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\kinafune\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kinafune\\.nuget\\packages"
+    ]
+  }
+}
